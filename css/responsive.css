@@ -1,0 +1,343 @@
+/* Responsive styles */
+/* Responsive Styles for All Devices */
+
+/* Large Devices (Desktops, 992px and up) */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .cta .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cta-content {
+        margin-bottom: 30px;
+    }
+    
+    /* Calculator Page */
+    .calculator-container {
+        flex-direction: column;
+    }
+    
+    .calculator-form,
+    .calculator-results {
+        padding: 30px;
+    }
+    
+    /* Admin Panel */
+    .admin-header-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    
+    .admin-nav ul {
+        flex-wrap: wrap;
+    }
+    
+    /* About Page */
+    .about-grid {
+        flex-direction: column;
+    }
+    
+    .about-text,
+    .about-image {
+        flex: none;
+        width: 100%;
+    }
+    
+    .about-image {
+        order: -1;
+        margin-bottom: 40px;
+    }
+    
+    /* Partners Grid */
+    .partners-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .navbar .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background-color: var(--white);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 40px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar .nav-links.active {
+        left: 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero {
+        padding: 150px 0 80px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    .features h2,
+    .services-preview h2,
+    .testimonials h2 {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .testimonial-slider {
+        padding: 30px 20px;
+    }
+    
+    /* Calculator Page */
+    .calculator-hero h1 {
+        font-size: 36px;
+    }
+    
+    .calculator-hero p {
+        font-size: 18px;
+    }
+    
+    /* Admin Panel */
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    #add-service-btn,
+    #add-offer-btn {
+        width: 100%;
+    }
+    
+    .services-list,
+    .offers-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 95%;
+    }
+    
+    /* About Page */
+    .about-hero h1 {
+        font-size: 36px;
+    }
+    
+    .about-hero p {
+        font-size: 18px;
+    }
+    
+    .about-text h2,
+    .team-section h2 {
+        font-size: 30px;
+    }
+    
+    .mission-grid,
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact Page */
+    .contact-hero h1 {
+        font-size: 36px;
+    }
+    
+    .contact-hero p {
+        font-size: 18px;
+    }
+    
+    /* Services Page */
+    .services-hero h1 {
+        font-size: 36px;
+    }
+    
+    .services-hero p {
+        font-size: 18px;
+    }
+    
+    .offers-section h2 {
+        font-size: 30px;
+    }
+    
+    /* Subsidiaries Page */
+    .subsidiaries-hero h1 {
+        font-size: 36px;
+    }
+    
+    .subsidiaries-hero p {
+        font-size: 18px;
+    }
+    
+    .partnership-section h2 {
+        font-size: 30px;
+    }
+}
+
+/* Small Devices (Phones, 576px and up) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn,
+    .btn-outline {
+        width: 100%;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .chatbot-widget {
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    .chatbot-trigger {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+    /* Calculator Page */
+    .calculator-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .calculator-hero h1 {
+        font-size: 28px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .modal-close-btn,
+    #service-form button[type="submit"],
+    #offer-form button[type="submit"] {
+        width: 100%;
+    }
+    
+    /* Admin Panel */
+    .admin-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-actions {
+        flex-direction: column;
+    }
+    
+    .modal-close-btn,
+    #service-form button[type="submit"],
+    #offer-form button[type="submit"] {
+        width: 100%;
+    }
+    
+    /* About Page */
+    .about-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .about-hero h1 {
+        font-size: 28px;
+    }
+    
+    .stat-item h3 {
+        font-size: 36px;
+    }
+    
+    /* Contact Page */
+    .contact-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .contact-hero h1 {
+        font-size: 28px;
+    }
+    
+    .info-item {
+        flex-direction: column;
+    }
+    
+    .info-icon {
+        margin-bottom: 10px;
+    }
+    
+    .map-container iframe {
+        height: 300px;
+    }
+    
+    /* Services Page */
+    .services-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .services-hero h1 {
+        font-size: 28px;
+    }
+    
+    .services-grid,
+    .offers-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Subsidiaries Page */
+    .subsidiaries-hero {
+        padding: 100px 0 60px;
+    }
+    
+    .subsidiaries-hero h1 {
+        font-size: 28px;
+    }
+    
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+}
